@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Character Choice</title> 
+    <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+    <style>
+        html {
+            font-size: 30px;
+            font-family: 'Harry Potter', sans-serif;
+        }
+
+        body {
+            color: black;
+            background-color: #D9AFD9;
+            background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%); 
+            background-repeat: no-repeat;
+            margin-top: 3.5rem;
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        input[type="submit"],
+        input[type="reset"] 
+        {
+                display: inline-block;
+                outline: 0;
+                text-align: center;
+                cursor: pointer;
+                height: 34px;
+                padding: 0 13px;
+                color: #fff;
+                vertical-align: top;
+                border-radius: 3px;
+                border: 1px solid transparent;
+                transition: all .3s ease;
+                background: #2967cc;
+                border-color: #2980cc;
+                font-weight: 600;
+                text-transform: uppercase;
+                line-height: 16px;
+                font-size: 11px;
+            }
+    </style>
+</head>
+
+<body>
+    <h1>Character Selection</h1>
+        
+            <br>
+            <form id="formSel" method="post" action="http://localhost:<%- portnum %>/pickResp">
+
+                    <div>
+                        <label for="userName">Username:</label>
+                        <input type="text" id="userName" name="userName"><br>
+                        <label for="favChar">Favorite Character:</label>
+                        <select id="favChar" name="favChar">
+                            <option>Harry Potter</option>
+                            <option>Hermione Granger</option>   
+                            <option>Ron Weasley</option>
+                            <option>Draco Malfoy</option>
+                            <option>Minerva McGonagall</option>
+                            <option>Cedric Diggory</option>
+                            <option>Severus Snape</option>
+                            <option>Rubeus Hagrid</option>
+                            <option>Neville Longbottom</option>
+                            <optio>Albus Dumbledore</option>
+                        </select><br>
+                    </div>
+                    <br>
+                    <div id="submits">
+                      <input type="reset" value="Reset">
+                      <input type="submit" value="Submit Application" id="submitter">
+                    </div>
+                </form> 
+                <br>
+    <a href="/">APPARATE TO HOME</a>
+</body>
+
+</html>
