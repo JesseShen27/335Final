@@ -26,7 +26,7 @@ app.get("/", (request, response) => {
 });
 
 app.get("/characterPick", (request, response) => {
-    const variables = {portnum: portNumber};
+    const variables = {};
     response.render("characterPick", variables);
 });
 
@@ -87,7 +87,7 @@ app.post("/pickResp", (request, response) => {
 });
 
 app.get("/userLookup", (request, response) => {
-    const variables = {portnum: portNumber};
+    const variables = {};
     response.render("userLookup", variables);
 });
 
@@ -153,7 +153,7 @@ app.post("/lookupResp", (request, response) => {
 });
 
 app.get("/clear", (request, response) => {
-    const variables = {portnum: portNumber};
+    const variables = {};
     response.render("clear", variables);
 });
 
